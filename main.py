@@ -10,7 +10,7 @@ import io
 from dataHandler import dataHandler
 
 def get_img():
-    upload_imgs = st.file_uploader(':blue[Select a business card (Image file)]', type =['png','jpg', "jpeg"], accept_multiple_files=True)
+    upload_imgs = st.file_uploader(':blue[Select business cards (Image file)]', type =['png','jpg', "jpeg"], accept_multiple_files=True)
     st.info(''':blue[File extension must be PNG, JPG, JPEG, Uploaded files are limited to 200MB, Language : English]''')
     #print(upload_imgs)
     if(upload_imgs is not None):
